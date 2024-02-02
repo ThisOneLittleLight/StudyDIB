@@ -21,6 +21,8 @@
 #The player has an inventory attribute which is a list containing the items (With items I just mean Strings that depict what would be real Item names in a real game)
 #
 #Now add a function that adds a item to the inventory. It should take a string as an agrument to add to the list
+#
+#Add a print_inventory function that prints every item of the player
 
 #NR 4)
 #Create an Enemy class that has a battle cry varible
@@ -35,3 +37,5 @@
 #   -The Enemies stats are printed
 #   -The Player attacks the Enemy
 #   -The Enemies stats are printed again
+#   -The Player gets two items dropped (added to the inventory)
+#   -Print the players inventory

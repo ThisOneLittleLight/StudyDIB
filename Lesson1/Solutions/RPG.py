@@ -33,6 +33,15 @@ class Player(Character):
     inventory = []
     def __init__(self, name, health, damage):
         super().__init__(name, health, damage)
+    
+    def add_item_to_inventory(self, item):
+        self.inventory.append(item)
+    
+    def print_inventory(self):
+        print("This is the players inventory:")
+        for i in self.inventory:
+            print(i)
+
 
 class Enemy(Character):
     battlecry = ""
@@ -44,7 +53,7 @@ class Enemy(Character):
         print(self.name, " screams: ", self.battlecry)
         print("")
 
-
+#Test the program out
 player = Player("Player" ,10, 4)
 enemy = Enemy("Enemy", 4, 1, "REEEEEEEEEEEE")
 
@@ -54,3 +63,8 @@ enemy.print_stats()
 player.attack(enemy)
 
 enemy.print_stats()
+
+print("")
+player.add_item_to_inventory("health_potion")
+player.add_item_to_inventory("rusty_sword")
+player.print_inventory()
